@@ -947,11 +947,11 @@
     console.log('New Lead:', leadData);
 
     // Send to Make.com webhook (CRM)
-    fetch('https://hook.eu1.make.com/l2v1414t0vvmmryvecnrf2zbajeow6mq', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(leadData)
-    }).catch(err => console.log('Webhook error:', err));
+fetch('https://hook.eu1.make.com/l2v1414t0vvmmryvecnrf2zbajeow6mq', {
+  method: 'POST',
+  headers: { 'Content-Type': 'text/plain' },
+  body: JSON.stringify(leadData)
+}).catch(err => console.log('Webhook error:', err));
 
     const message = encodeURIComponent(
       `🎯 NEW LEAD from your website!\n\n` +
