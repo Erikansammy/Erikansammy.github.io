@@ -833,7 +833,7 @@
         <label>TYPE OF BUSINESS *</label>
         <select id="business">
           <option value="" disabled selected>Select your business type</option>
-          <option value="real-estate">Real Estate Agent</option>
+          <option value="real-estate">Real Estate Agent / Broker</option>
           <option value="health">Health / Medical</option>
           <option value="retail">Shop / Retail</option>
           <option value="food">Food Business</option>
@@ -864,15 +864,37 @@
     </div>
 
     <div class="success-state" id="success-state">
-      <div class="success-icon">🎉</div>
-      <div class="success-title">You're In! Guide Is On Its Way!</div>
-      <p class="success-sub">
-        Thank you! I'll personally send you the guide on WhatsApp within a few minutes. 
-        Also check your email inbox 📧<br><br>
-        <strong style="color: var(--light-purple);">Bonus:</strong> I'll include a FREE personalised 
-        automation tip specifically for your business type!
-      </p>
-      <a href="Stop_Doing_It_Manually_Guide.pdf" download class="download-btn">
+  <div class="success-icon">🎉</div>
+
+  <div class="success-title">
+    You're In! Guide Is On Its Way!
+  </div>
+
+  <p class="success-sub">
+    Your guide is on its way to your email right now! 📧
+
+    <br><br>
+
+    Check your inbox in the next few minutes.
+
+    Over the next few days, I'll also send practical automation tips that can help you save time, capture more leads, and grow your business.
+
+    <br><br>
+
+    <strong style="color: var(--light-purple);">
+      — Samuel Isaac, Founder AutoMinds AI
+    </strong>
+
+    <br><br>
+
+    <strong style="color: var(--light-purple);">
+      Bonus:
+    </strong>
+
+    I'll include a FREE personalised automation tip specifically for your business type!
+  </p>
+
+  <a href="Stop_Doing_It_Manually_Guide.pdf" download class="download-btn">
         📥 Download Guide Now
       </a>
       <br><br>
@@ -884,6 +906,41 @@
       </p>
     </div>
   </div>
+</section>
+   <!-- CALENDLY CTA -->
+<section style="
+max-width: 700px;
+margin: 60px auto;
+padding: 40px;
+text-align: center;
+background: rgba(255,255,255,0.04);
+border: 1px solid rgba(99,102,241,0.2);
+border-radius: 24px;
+">
+
+<h2 style="font-size:32px;margin-bottom:15px;">
+Need Help Right Now?
+</h2>
+
+<p style="color:#94A3B8;font-size:18px;line-height:1.7;margin-bottom:30px;">
+Book a FREE 30-Minute Automation Audit and I'll show you exactly where your business can save time, capture more leads, and increase revenue using automation.
+</p>
+
+<a href="https://calendly.com/eriksammy79/30min"
+target="_blank"
+style="
+display:inline-block;
+background:linear-gradient(135deg,#F97316,#EA580C);
+color:white;
+padding:18px 32px;
+border-radius:12px;
+font-weight:700;
+text-decoration:none;
+font-size:18px;
+">
+📅 Book My Free Automation Audit
+</a>
+
 </section>
 
 <!-- SOCIAL PROOF -->
@@ -966,10 +1023,7 @@ fetch('https://hook.eu1.make.com/l2v1414t0vvmmryvecnrf2zbajeow6mq', {
     document.getElementById('form-content').style.display = 'none';
     document.getElementById('success-state').style.display = 'block';
 
-    setTimeout(() => {
-      window.open(`https://wa.me/2349030405860?text=${message}`, '_blank');
-    }, 1500);
-  }
+    // WhatsApp popup disabled
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
